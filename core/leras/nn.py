@@ -234,9 +234,9 @@ class nn():
         while True:
             try:
                 if choose_only_one:
-                    choosed_idxs = io.input_str("Which GPU index to choose?", best_device_indexes)
+                    choosed_idxs = 0
                 else:
-                    choosed_idxs = io.input_str("Which GPU indexes to choose?", best_device_indexes)
+                    choosed_idxs = 0
 
                 if allow_cpu and choosed_idxs.lower() == "cpu":
                     choosed_idxs = []
